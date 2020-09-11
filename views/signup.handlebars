@@ -1,0 +1,32 @@
+<form action='/signup' method='POST'>
+  <div>
+    <label for="name">Username :</label>
+    <input type="text" placeholder="Username" name="username"/>
+  </div>
+  <div>
+    <label for="email">Email :</label>
+    <input type="email" placeholder="Email" name="email"/>
+  </div>
+  <div>
+    <label for="password">Password :</label>
+    <input type="password" placeholder="Password" name="password" minlength="8" required_pattern="(?=.*[a-z])(?=.*[A-Z]){8,}" />
+  </div>
+  <div>
+    <label for="password">Confirm Password :</label>
+    <input type="password" placeholder="Confirm Password" name="confirm_password" minlength="8" required_pattern="(?=.*[a-z])(?=.*[A-Z]){8,}"/>
+  </div>
+  <div>
+    <label for="first_name">First Name :</label> 
+    <input for="text" placeholder="First Name" name="first_name">
+  </div>
+  <div>
+    <label for="surname">Surname :</label> 
+    <input for="text" placeholder="Surname" name="surname">
+  </div>
+  <div>
+    <label for="date">Date of birth :</label> 
+    <input for="date" placeholder="Date of birth" name="birthday">
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
